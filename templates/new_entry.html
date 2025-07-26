@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>New Entry</title></head>
+<body>
+    <h2>Submit a Guess</h2>
+    <form method="post">
+        Name: <input type="text" name="name" required><br>
+        Date of Birth: <input type="date" name="dob" required><br>
+        Length (cm): <input type="number" step="0.1" name="length" required><br>
+        Weight (g): <input type="number" step="1" name="weight" required><br>
+        Gender:
+        <select name="gender">
+            <option value="Boy">Boy</option>
+            <option value="Girl">Girl</option>
+        </select><br>
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{{ url_for('home') }}">Back</a>
+</body>
+</html>

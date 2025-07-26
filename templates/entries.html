@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>All Entries</title></head>
+<body>
+    <h2>Entries</h2>
+    <table border="1">
+        <tr><th>Name</th><th>DOB</th><th>Length</th><th>Weight</th><th>Gender</th></tr>
+        {% for e in entries %}
+        <tr>
+            <td>{{ e['Name'] }}</td>
+            <td>{{ e['DateOfBirth'] }}</td>
+            <td>{{ e['Length'] }}</td>
+            <td>{{ e['Weight'] }}</td>
+            <td>{{ e['Gender'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('home') }}">Back</a>
+</body>
+</html>

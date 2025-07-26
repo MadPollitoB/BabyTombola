@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Enter Result</title></head>
+<body>
+    <h2>Enter Actual Baby Info</h2>
+    <form method="post">
+        Date of Birth: <input type="date" name="dob" required><br>
+        Length (cm): <input type="number" step="0.1" name="length" required><br>
+        Weight (g): <input type="number" step="1" name="weight" required><br>
+        Gender:
+        <select name="gender">
+            <option value="Boy">Boy</option>
+            <option value="Girl">Girl</option>
+        </select><br>
+        <button type="submit">Find Winner</button>
+    </form>
+    <a href="{{ url_for('home') }}">Back</a>
+</body>
+</html>

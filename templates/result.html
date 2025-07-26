@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Result</title></head>
+<body>
+    <h2>Winner: {{ winner['Name'] }}</h2>
+    <h3>Graphs</h3>
+    {% for graph in graphs %}
+        <img src="data:image/png;base64,{{ graph }}" style="max-width: 600px;"><br>
+    {% endfor %}
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
